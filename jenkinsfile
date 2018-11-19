@@ -13,7 +13,7 @@ node{
         // echo = siz
         echo app[siz-2]
         def app_name = projectName.split("\\-").last().toUpperCase()
-        echo app_name+app-[siz-2]
+        echo app_name+app+"-"+[siz-2]
 
         def date = new Date()
         println date.format("YYYY-MM-dd HH:mm:ss")
