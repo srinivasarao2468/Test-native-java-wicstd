@@ -11,9 +11,10 @@ node{
         def app = projectName.split("\\-")
         siz = app.size()
         def app_name = app[siz-1].toLowerCase()
+        echo app[siz-1]
         def project_name = (app[siz-2]+"-"+app_name).toLowerCase()
         echo project_name
-        echo app[siz-2]
+
         def date = new Date()
         println date.format("YYYYMMddHHmmss")
     }
