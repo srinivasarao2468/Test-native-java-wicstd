@@ -12,7 +12,7 @@ node{
         def app = projectName.split("\\-")
         siz = app.size()
         // echo = siz
-        echo app[siz-2]
+        echo app[siz-2]+app[siz-1]
         def app_name = projectName.split("\\-").last().toUpperCase()
         def project_name = (app[siz-2]+"-"+app_name).toLowerCase()
         echo project_name
