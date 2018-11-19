@@ -9,7 +9,7 @@ node{
         def projectName = elements[elements.size()-1].split("\\.")[0].toUpperCase()
         echo projectName
 
-        def app[] = projectName.split("\\-")
+        def app= projectName.split("\\-")
         siz = app.size()
         echo = siz
         echo app[siz-2]
