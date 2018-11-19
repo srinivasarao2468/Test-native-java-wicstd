@@ -8,7 +8,7 @@ node{
         def elements =  repositoryUrl.split("/")
         def projectName = elements[elements.size()-1].split("\\.")[0].toUpperCase()
         echo projectName
-        def app = projectName.split("\\-").last()-1.toUpperCase()
+        def app = projectName.split("\\-")
         echo app
         def app_name = projectName.split("\\-").last().toUpperCase()
         echo app_name
