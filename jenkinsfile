@@ -8,13 +8,13 @@ node{
         def elements =  repositoryUrl.split("/")
         def projectName = elements[elements.size()-1].split("\\.")[0].toUpperCase()
         echo projectName
-
-        def app= projectName.split("\\-")
+        def app = projectName.split("\\-")
         siz = app.size()
-        echo = siz
+        echo = "size-${siz}"
         echo app[siz-2]
         def app_name = projectName.split("\\-").last().toUpperCase()
         echo app_name
+
         def date = new Date()
         println date.format("YYYY-MM-dd HH:mm:ss")
     }
