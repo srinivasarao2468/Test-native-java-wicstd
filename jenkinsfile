@@ -9,12 +9,12 @@ node{
         def projectName = elements[elements.size()-1].split("\\.")[0].toUpperCase()
         echo projectName
         def app = projectName.split("\\-")
-        siz = app.size()
+        //siz = app.size()
         // echo = siz
-        echo app[siz-2]
+        echo app[app.size()-2]
         def app_name = projectName.split("\\-").last().toUpperCase()
-        echo app[siz-2]+"-"+app_name
-
+        def project_name = app[siz-2]+"-"+app_name
+        echo project_name
         def date = new Date()
         println date.format("YYYY-MM-dd HH:mm:ss")
     }
